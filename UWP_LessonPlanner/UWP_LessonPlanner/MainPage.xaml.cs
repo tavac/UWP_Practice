@@ -24,7 +24,11 @@ namespace UWP_LessonPlanner
     {
         public MainPage()
         {
+            Windows.UI.ViewManagement.ApplicationView AppView = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView();
+            Size s = new Size(360, 640);
+            AppView.SetPreferredMinSize(s);
             this.InitializeComponent();
         }
+
     }
 }
