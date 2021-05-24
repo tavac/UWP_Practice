@@ -24,11 +24,37 @@ namespace UWP_LessonPlanner
     {
         public MainPage()
         {
-            Windows.UI.ViewManagement.ApplicationView AppView = Windows.UI.ViewManagement.ApplicationView.GetForCurrentView();
-            Size s = new Size(360, 640);
-            AppView.SetPreferredMinSize(s);
+            Windows.UI.ViewManagement.ApplicationView.GetForCurrentView().SetPreferredMinSize(new Size(360, 600));
+            Windows.UI.ViewManagement.ApplicationView.PreferredLaunchViewSize = new Size(360, 600);
+            Windows.UI.ViewManagement.ApplicationView.PreferredLaunchWindowingMode = Windows.UI.ViewManagement.ApplicationViewWindowingMode.PreferredLaunchViewSize;
             this.InitializeComponent();
         }
 
+        private async void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            MediaElement mediaElement = new MediaElement();
+            var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
+            if (UsernameInputBox.Text.ToLower() == "admin" && PasswordInputBox.Password == "admin")
+            {
+                Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("Hello, " + UsernameInputBox.Text);
+                mediaElement.SetSource(stream, stream.ContentType);
+                mediaElement.Play();
+
+                ///
+                Frame.Navigate(typeof(Page2));
+                ///
+            }
+            else
+            {
+                Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("That is not a valid account.");
+                mediaElement.SetSource(stream, stream.ContentType);
+                mediaElement.Play();
+            }
+        }
+
+        void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
+        {
+            throw new Exception("Failed to load Page " + e.SourcePageType.FullName);
+        }
     }
 }

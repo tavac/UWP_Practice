@@ -43,3 +43,8 @@ C:\Users\caiot\Documents\ARES\Prototypes\UWP_Practice\UWP_LessonPlanner\UWP_Less
 C:\Users\caiot\Documents\ARES\Prototypes\UWP_Practice\UWP_LessonPlanner\UWP_LessonPlanner\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\caiot\Documents\ARES\Prototypes\UWP_Practice\UWP_LessonPlanner\UWP_LessonPlanner\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\caiot\Documents\ARES\Prototypes\UWP_Practice\UWP_LessonPlanner\UWP_LessonPlanner\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424959200000000.json
+C:\Users\caiot\Documents\ARES\Prototypes\UWP_Practice\UWP_LessonPlanner\UWP_LessonPlanner\bin\x86\Debug\Page2.xbf
+C:\Users\caiot\Documents\ARES\Prototypes\UWP_Practice\UWP_LessonPlanner\UWP_LessonPlanner\obj\x86\Debug\Page2.g.i.cs
+C:\Users\caiot\Documents\ARES\Prototypes\UWP_Practice\UWP_LessonPlanner\UWP_LessonPlanner\obj\x86\Debug\Page2.g.cs
+C:\Users\caiot\Documents\ARES\Prototypes\UWP_Practice\UWP_LessonPlanner\UWP_LessonPlanner\obj\x86\Debug\Page2.xaml
+C:\Users\caiot\Documents\ARES\Prototypes\UWP_Practice\UWP_LessonPlanner\UWP_LessonPlanner\obj\x86\Debug\Page2.xbf

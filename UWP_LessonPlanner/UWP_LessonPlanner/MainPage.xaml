@@ -14,11 +14,13 @@
         <Grid.Background>
             <AcrylicBrush FallbackColor="#CC292929" TintColor="#7F212121" TintOpacity="0.01" BackgroundSource="HostBackdrop"/>
         </Grid.Background>
-        <Button x:Name="LoginButton" Content="Login&#xD;&#xA;" FontSize="16" Background="#66000000" Margin="130,365,130,0" VerticalAlignment="Top" RequestedTheme="Default" Height="35" HorizontalAlignment="Center" Width="100"/>
-        <Button x:Name="RegisterButton" Content="Register&#xA;" FontSize="16" Background="#66000000" Margin="130,445,130,0" VerticalAlignment="Top" RequestedTheme="Default" Height="35" HorizontalAlignment="Center" Width="100"/>
+        <TextBox x:Name="UsernameInputBox" Margin="80,205,80,0" Text="" TextWrapping="Wrap" TextAlignment="Start" Height="35" VerticalAlignment="Top" Width="200" HorizontalAlignment="Center"/>
         <PasswordBox x:Name="PasswordInputBox" Margin="80,284,80,0" Background="#66000000" Height="35" VerticalAlignment="Top" HorizontalAlignment="Center" Width="200"/>
-        <TextBox x:Name="UsernameInputBox" Margin="80,205,80,0" Text="Username" TextWrapping="Wrap" TextAlignment="Start" Height="35" VerticalAlignment="Top" Width="200" HorizontalAlignment="Center"/>
-        <TextBlock Margin="30,80,30,0" Text="Lesson Planner" TextWrapping="Wrap" FontFamily="Arial" FontSize="36" TextAlignment="Center" Foreground="#FFFBFBFB" Height="40" VerticalAlignment="Top"/>
+        <Button x:Name="LoginButton" Content="Login&#xD;&#xA;" FontSize="16" Background="#66000000" Margin="130,365,130,0" VerticalAlignment="Top" RequestedTheme="Default" Height="35" HorizontalAlignment="Center" Width="100" Click="LoginButton_Click"/>
+        <Button x:Name="RegisterButton" Content="Register&#xA;" FontSize="16" Background="#66000000" Margin="130,445,130,0" VerticalAlignment="Top" RequestedTheme="Default" Height="35" HorizontalAlignment="Center" Width="100"/>
+        <TextBlock Margin="30,60,30,0" Text="Lesson Planner" TextWrapping="Wrap" FontFamily="Arial" FontSize="36" TextAlignment="Center" Foreground="#FFFBFBFB" Height="40" VerticalAlignment="Top"/>
+        <TextBlock x:Name="UsernameTextBlock" HorizontalAlignment="Center" Margin="0,187,0,0" Text="Username" TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#BFFFFFFF" FontSize="10" Width="200" Height="15"/>
+        <TextBlock x:Name="PasswordTextBlock" HorizontalAlignment="Center" Margin="0,266,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top" FocusVisualPrimaryBrush="#BFFFFFFF" FontSize="10" Width="200" Height="15"/>
 
     </Grid>
 </Page>
